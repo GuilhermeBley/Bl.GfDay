@@ -1,0 +1,29 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Tabata ♥";
+}
+
+<h1>Feliz Dia dos Namorados!</h1>
+<div class="container">
+    <p>Aqui estão algumas das nossas lembranças especiais.</p>
+    <div class="photo-gallery">
+        <div class="photo">
+            <img src="ta1.jpg" alt="Foto 1">
+        </div>
+        <div class="photo">
+            <img src="ta3.jpg" alt="Foto 2">
+        </div>
+        <div class="photo">
+            <img src="ta2.jpg" alt="Foto 3">
+        </div>
+    </div>
+    <button class="music-button" onclick="playMusic()">Tocar Música Favorita</button>
+    <audio id="music" src="./Mtg Quero Te Encontrar - Humberto e Ronaldo, Mc Mininin, Silvanno Salles,Dj Lg Prod Dj Jz (128 kbps).mp3"></audio>
+</div>
+<script>
+    function playMusic() {
+        const music = document.getElementById('music');
+        music.play();
+    }
+</script>
